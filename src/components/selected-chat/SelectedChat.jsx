@@ -34,7 +34,7 @@ const SelectedChat = () => {
           },
         }),
       };
-      const baseEndpoint = process.env.REACT_APP_BE_DEV;
+      const baseEndpoint = process.env.REACT_APP_BE_PROD;
       const res = await fetch(
         `${baseEndpoint}/messages/${selectedChat._id}`,
         options
