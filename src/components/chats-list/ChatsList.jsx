@@ -13,7 +13,7 @@ const ChatsList = () => {
       },
     };
 
-    const baseEndpoint = process.env.REACT_APP_BE_DEV;
+    const baseEndpoint = process.env.REACT_APP_BE_PROD;
     const res = await fetch(`${baseEndpoint}/chats`, options);
 
     const chats = await res.json();
